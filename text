@@ -1,0 +1,15 @@
+## 📊 Dataset Exploration
+
+### Clickstream Dataset
+- **Rows:** ~200,000  
+- **Columns:** user_id, session_id, page, timestamp, device_type  
+- **Null Values:** Found in `device_type` and `page`, filled with “Unknown”  
+- **Duplicates:** Removed using `drop_duplicates()`
+
+### Transactions Dataset
+- **Rows:** ~100,000  
+- **Columns:** transaction_id, customer_id, amount, currency, timestamp  
+- **Null Values:** Found in `currency` and `amount`, replaced with defaults  
+- **Duplicates:** Removed using `drop_duplicates(subset='transaction_id')`
+
+Both datasets were standardized, cleaned, and enhanced with `amount_in_usd` using the ExchangeRate API.
