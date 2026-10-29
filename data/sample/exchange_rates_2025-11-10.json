@@ -1,0 +1,12 @@
+{
+  "result": "success",
+  "base_code": "USD",
+  "time_last_update_utc": "2025-11-10 (snapshot from the original pipeline run)",
+  "conversion_rates": {
+    "USD": 1.0,
+    "EUR": 0.8656,
+    "GBP": 0.7609,
+    "INR": 88.7342,
+    "JPY": 153.6231
+  }
+}
